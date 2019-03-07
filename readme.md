@@ -1,5 +1,6 @@
 #装初始化并进行100条数据的加密和解密
-##华为mate8：  Android7.0  24     安
+
+ ##华为mate8：  Android7.0  24     安
     第一次安装
     D: keystore初始化开始：1551958574680
     D: keystore初始化结束：1551958574772
@@ -52,7 +53,7 @@
     D: keystore解密数据耗时：8507
 
 
-##小米 mix2   Android8.0  26
+ ##小米 mix2   Android8.0  26
     第一次安装
     D: keystore初始化开始：1551958944870
     D: keystore初始化结束：1551958946731
@@ -104,7 +105,7 @@
     D: keystore解密数据结束：1551959287643
     D: keystore解密数据耗时：27428
 
-##vivo x5sl   Android4.4.4   19
+ ##vivo x5sl   Android4.4.4   19
 
     第一次安装
     D: keystore初始化开始：1551959370572
@@ -158,7 +159,7 @@
     D: keystore解密数据耗时：3007
 
 
-##华为mate9  Android9.0  28
+ ##华为mate9  Android9.0  28
     第一次安装
     D: keystore初始化开始：1551959707681
     D: keystore初始化结束：1551959708385
@@ -210,7 +211,7 @@
     D: keystore解密数据结束：1551959963823
     D: keystore解密数据耗时：9601
 
-##oppo a57    Android6.0.1      23
+ ##oppo a57    Android6.0.1      23
     第一次安装
     D: keystore初始化开始：1551960153513
     D: keystore初始化结束：1551960155462
