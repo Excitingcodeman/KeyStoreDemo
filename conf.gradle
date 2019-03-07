@@ -1,0 +1,95 @@
+ext {
+
+    android = [
+            compileSdkVersion: 26,
+            buildToolsVersion: "27.0.3",
+
+            minSdkVersion    : 15,
+            targetSdkVersion : 24,
+
+            versionCode      : 55,
+            versionName      : '3.0.1',
+
+            VSupportSdk      : '27.1.1',
+
+    ]
+
+    dependencies = [
+            "appcompat-v7"                 : "com.android.support:appcompat-v7:${android["VSupportSdk"]}",
+            "support-v4"                   : "com.android.support:support-v4:${android["VSupportSdk"]}",
+            "design"                       : "com.android.support:design:${android["VSupportSdk"]}",// design
+            "annotations"                  : "com.android.support:support-annotations:${android["VSupportSdk"]}",// annotations
+            "recyclerview-v7"              : "com.android.support:recyclerview-v7:${android["VSupportSdk"]}",// recyclerview
+            "constraint-layout"            : "com.android.support.constraint:constraint-layout:1.1.2",
+
+            "picasso"                      : "com.squareup.picasso:picasso:2.5.2",// 图片加载
+            "xrecyclerview"                : "com.github.limedroid:ARecyclerView:v1.1.5",//xRecyclerView
+            "canary-debug"                 : "com.squareup.leakcanary:leakcanary-android:1.4-beta2",// 内存泄漏检测
+            "canary-release"               : "com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2",// 内存泄漏检测
+            "avi-loading"                  : "com.wang.avi:library:1.0.2",// XDroid
+            "XDroid-Base"                  : "com.github.fodroid:XDroid-Base:v1.5.3",// XDroid
+            "sweetalert"                   : "com.github.f0ris.sweetalert:library:1.5.1", // loading加载框
+            "banner"                       : "com.youth.banner:banner:1.4.10", // banner
+            "realtimeblurview"             : "com.github.mmin18:realtimeblurview:1.0.6", // 一个实时动态模糊库，类似于ios的UIVisualEffectView。
+            "BaseRecyclerViewAdapterHelper": "com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.31", // BaseRecyclerViewAdapterHelper
+            "MPAndroidChart"               : "com.github.PhilJay:MPAndroidChart:v3.0.1", // 图形动画库，项目里主要用到饼状图
+            "umeng-common"                 : "com.umeng.sdk:common:1.5.3", // 友盟统计
+            "umeng-analytics"              : "com.umeng.analytics:analytics:6.1.4", //  友盟统计
+            "transformations"              : "jp.wasabeef:glide-transformations:2.0.1",// 图片高斯模糊（与glide共同使用）
+            "PickerView"                   : "com.contrarywind:Android-PickerView:3.2.7",//滑动选择器
+
+            //fragmentation       fragment和activity
+            "fragmentation"                : "me.yokeyword:fragmentation:1.3.6",  // 如果想使用SwipeBack 滑动边缘退出Fragment/Activity功能，完整的添加规则如下：
+            "fragmentation_swipeback"      : "me.yokeyword:fragmentation-swipeback:1.3.6", // swipeback基于fragmentation, 如果是自定制SupportActivity/Fragment，则参照SwipeBackActivity/Fragment实现即可
+            "fragmentation_eventbus_scope" : "me.yokeyword:eventbus-activity-scope:1.1.0",// Activity作用域的EventBus，更安全，可有效避免after onSavenInstanceState()异常
+
+            "rxlifecycle-components"       : "com.trello.rxlifecycle2:rxlifecycle-components:2.2.1",
+            "rxlifecycle"                  : "com.trello.rxlifecycle2:rxlifecycle:2.2.1",
+            "rxlifecycle-android"          : "com.trello.rxlifecycle2:rxlifecycle-android:2.2.1",
+
+            //测试相关
+            "junit"                        : "junit:junit:4.12",
+            "test_runner"                  : "com.android.support.test:runner:1.0.2",
+            "espresso"                     : "com.android.support.test.espresso:espresso-core:3.0.2",
+
+            "butterknife"                  : "com.jakewharton:butterknife:8.4.0",// butterknife
+            "butterknife-apt"              : "com.jakewharton:butterknife-compiler:8.4.0",// butterknife
+
+            "glide"                        : "com.github.bumptech.glide:glide:3.7.0",// 图片加载
+            "glide-okhttp3"                : 'com.github.bumptech.glide:okhttp3-integration:1.4.0@aar',// 图片加载
+            "transformations"              : "jp.wasabeef:glide-transformations:2.0.1",// 图片高斯模糊（与glide共同使用）
+
+            // 网络请求+响应框架
+            "okhttp3"                      : "com.squareup.okhttp3:okhttp:3.4.1",// okHttp
+            "okhttp3-interceptor"          : "com.squareup.okhttp3:logging-interceptor:3.4.1",// okHttp
+            "retrofit"                     : "com.squareup.retrofit2:retrofit:2.3.0",// retrofit2
+            "converter-gson"               : "com.squareup.retrofit2:converter-gson:2.3.0",// retrofit2
+            "converter-scalars"            : "com.squareup.retrofit2:converter-scalars:2.3.0",// retrofit2
+            "adapter-rxjava2"              : "com.squareup.retrofit2:adapter-rxjava2:2.3.0",// retrofit2
+            "rxjava2-rxjava"               : "io.reactivex.rxjava2:rxjava:2.0.1",// RxJava
+            "rxjava2-rxandroid"            : "io.reactivex.rxjava2:rxandroid:2.0.1", // RxAndroid
+
+            "rxpermissions2"               : "com.tbruyelle.rxpermissions2:rxpermissions:0.9.5@aar",//rx权限控制
+
+            "eventbus"                     : "org.greenrobot:eventbus:3.0.0",//EventBus
+
+            "gson"                         : "com.google.code.gson:gson:2.6.2",//gson
+            // 日志
+            "logger"                       : "com.orhanobut:logger:2.2.0",//logger
+            //toast类
+            "Toasty"                       : "com.github.GrenderG:Toasty:1.3.0",//toast
+
+            // 内存检测
+            "canary-debug"                 : "com.squareup.leakcanary:leakcanary-android:1.4-beta2",// 内存泄漏检测
+            "canary-release"               : "com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2",// 内存泄漏检测
+
+            "smart-refresh-layout"         : "com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-14", // 下拉刷新
+            "smart-refresh-header"         : "com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-14", // 下拉刷新
+
+            //jsbridge
+            "jsbridge"                     : "com.github.lzyzsd:jsbridge:1.0.4",//jsbridge  Android和H5相互调用 通信
+            "geek-thread"                  : "com.geek.thread:thread-pool:1.0.1",//多线程  线程池的维护库
+            "crashreport"                  : 'com.tencent.bugly:crashreport:2.1.5',//腾讯bugly
+            "nativecrashreport"            : 'com.tencent.bugly:nativecrashreport:2.2.0'
+    ]
+}
