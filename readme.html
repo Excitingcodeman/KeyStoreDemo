@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>readme</title>
+
+
+<style type="text/css">
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+
+kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb
+}
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+}
+</style>
+
+
+</head>
+
+<body>
+
+<h1 id="toc_0">安装初始化并进行100条数据的加密和解密</h1>
+
+<h2 id="toc_1">华为mate8：  Android7.0  24</h2>
+
+<div><pre><code class="language-none">第一次安装
+D: keystore初始化开始：1551958574680
+D: keystore初始化结束：1551958574772
+D: keystore初始化耗时：92
+D: keystore加密数据开始：1551958590988
+D: keystore加密数据结束：1551958596542
+D: keystore加密数据耗时：5554
+D: keystore解密数据开始：1551958600263
+D: keystore解密数据结束：1551958608834
+D: keystore解密数据耗时：8571
+第二次安装
+D: keystore初始化开始：1551958675874
+D: keystore初始化结束：1551958676169
+D: keystore初始化耗时：295
+D: keystore加密数据开始：1551958680772
+D: keystore加密数据结束：1551958685126
+D: keystore加密数据耗时：4354
+D: keystore解密数据开始：1551958687703
+D: keystore解密数据结束：1551958696237
+D: keystore解密数据耗时：8534
+第三次安装
+D: keystore初始化开始：1551958736723
+D: keystore初始化结束：1551958736897
+D: keystore初始化耗时：174
+D: keystore加密数据开始：1551958741352
+D: keystore加密数据结束：1551958745787
+D: keystore加密数据耗时：4435
+D: keystore解密数据开始：1551958747691
+D: keystore解密数据结束：1551958756217
+D: keystore解密数据耗时：8526
+第四次安装
+D: keystore初始化开始：1551958787364
+D: keystore初始化结束：1551958787440
+D: keystore初始化耗时：76
+D: keystore加密数据开始：1551958793641
+D: keystore加密数据结束：1551958799057
+D: keystore加密数据耗时：5416
+D: keystore解密数据开始：1551958807596
+D: keystore解密数据结束：1551958815999
+D: keystore解密数据耗时：8403
+第五次安装
+D: keystore初始化开始：1551958853447
+D: keystore初始化结束：1551958853505
+D: keystore初始化耗时：58
+D: keystore加密数据开始：1551958859388
+D: keystore加密数据结束：1551958863656
+D: keystore加密数据耗时：4268
+D: keystore解密数据开始：1551958865962
+D: keystore解密数据结束：1551958874469
+D: keystore解密数据耗时：8507</code></pre></div>
+
+<h2 id="toc_2">小米 mix2   Android8.0  26</h2>
+
+<div><pre><code class="language-none">第一次安装
+D: keystore初始化开始：1551958944870
+D: keystore初始化结束：1551958946731
+D: keystore初始化耗时：1861
+D: keystore加密数据开始：1551958950796
+D: keystore加密数据结束：1551958958526
+D: keystore加密数据耗时：7730
+D: keystore解密数据开始：1551958960916
+D: keystore解密数据结束：1551958987514
+D: keystore解密数据耗时：26598
+第二次安装
+D: keystore初始化开始：1551959017478
+D: keystore初始化结束：1551959017798
+D: keystore初始化耗时：320
+D: keystore加密数据开始：1551959021610
+D: keystore加密数据结束：1551959029302
+D: keystore加密数据耗时：7692
+D: keystore解密数据开始：1551959031401
+D: keystore解密数据结束：1551959058668
+D: keystore解密数据耗时：27267
+第三次安装
+D: keystore初始化开始：1551959094436
+D: keystore初始化结束：1551959097424
+D: keystore初始化耗时：2988
+D: keystore加密数据开始：1551959101098
+D: keystore加密数据结束：1551959109018
+D: keystore加密数据耗时：7920
+D: keystore解密数据开始：1551959112493
+D: keystore解密数据结束：1551959138325
+D: keystore解密数据耗时：25832
+第四次安装
+D: keystore初始化开始：1551959165614
+D: keystore初始化结束：1551959168274
+D: keystore初始化耗时：2660
+D: keystore加密数据开始：1551959171500
+D: keystore加密数据结束：1551959179320
+D: keystore加密数据耗时：7820
+D: keystore解密数据开始：1551959181574
+D: keystore解密数据结束：1551959209265
+D: keystore解密数据耗时：27691
+第五次安装
+D: keystore初始化开始：1551959244251
+D: keystore初始化结束：1551959246006
+D: keystore初始化耗时：1755
+D: keystore加密数据开始：1551959249398
+D: keystore加密数据结束：1551959257024
+D: keystore加密数据耗时：7626
+D: keystore解密数据开始：1551959260215
+D: keystore解密数据结束：1551959287643
+D: keystore解密数据耗时：27428</code></pre></div>
+
+<h2 id="toc_3">vivo x5sl   Android4.4.4   19</h2>
+
+<div><pre><code class="language-none">第一次安装
+D: keystore初始化开始：1551959370572
+D: keystore初始化结束：1551959371326
+D: keystore初始化耗时：754
+D: keystore加密数据开始：1551959374641
+D: keystore加密数据结束：1551959375346
+D: keystore加密数据耗时：705
+D: keystore解密数据开始：1551959377796
+D: keystore解密数据结束：1551959380883
+D: keystore解密数据耗时：3087
+第二次安装
+D: keystore初始化开始：1551959410513
+D: keystore初始化结束：1551959412855
+D: keystore初始化耗时：2342
+D: keystore加密数据开始：1551959417197
+D: keystore加密数据结束：1551959417850
+D: keystore加密数据耗时：653
+D: keystore解密数据开始：1551959419846
+D: keystore解密数据结束：1551959422941
+D: keystore解密数据耗时：3095
+第三次安装
+D: keystore初始化开始：1551959451221
+D: keystore初始化结束：1551959452430
+D: keystore初始化耗时：1209
+D: keystore加密数据开始：1551959457087
+D: keystore加密数据结束：1551959457770
+D: keystore加密数据耗时：683
+D: keystore解密数据开始：1551959460456
+D: keystore解密数据结束：1551959463421
+D: keystore解密数据耗时：2965
+第四次安装
+D: keystore初始化开始：1551959493725
+D: keystore初始化结束：1551959499232
+D: keystore初始化耗时：5507
+D: keystore加密数据开始：1551959501860
+D: keystore加密数据结束：1551959502497
+D: keystore加密数据耗时：637
+D: keystore解密数据开始：1551959504780
+D: keystore解密数据结束：1551959507906
+D: keystore解密数据耗时：3126
+第五次安装
+D: keystore初始化开始：1551959537836
+D: keystore初始化结束：1551959539470
+D: keystore初始化耗时：1634
+D: keystore加密数据开始：1551959542304
+D: keystore加密数据结束：1551959542969
+D: keystore加密数据耗时：665
+D: keystore解密数据开始：1551959545771
+D: keystore解密数据结束：1551959548778
+D: keystore解密数据耗时：3007</code></pre></div>
+
+<h2 id="toc_4">华为mate9  Android9.0  28</h2>
+
+<div><pre><code class="language-none">第一次安装
+D: keystore初始化开始：1551959707681
+D: keystore初始化结束：1551959708385
+D: keystore初始化耗时：704
+D: keystore加密数据开始：1551959711854
+D: keystore加密数据结束：1551959715897
+D: keystore加密数据耗时：4043
+D: keystore解密数据开始：1551959728152
+D: keystore解密数据结束：1551959739461
+D: keystore解密数据耗时：11309
+第二次安装
+D: keystore初始化开始：1551959816282
+D: keystore初始化结束：1551959816594
+D: keystore初始化耗时：312
+D: keystore加密数据开始：1551959819819
+D: keystore加密数据结束：1551959823620
+D: keystore加密数据耗时：3801
+D: keystore解密数据开始：1551959825647
+D: keystore解密数据结束：1551959835935
+D: keystore解密数据耗时：10288
+第三次安装
+D: keystore初始化开始：1551959858680
+D: keystore初始化结束：1551959858816
+D: keystore初始化耗时：136
+D: keystore加密数据开始：1551959861602
+D: keystore加密数据结束：1551959864516
+D: keystore加密数据耗时：2914
+D: keystore解密数据开始：1551959866368
+D: keystore解密数据结束：1551959876082
+D: keystore解密数据耗时：9714
+第四次安装
+D: keystore初始化开始：1551959900580
+D: keystore初始化结束：1551959901049
+D: keystore初始化耗时：469
+D: keystore加密数据开始：1551959904451
+D: keystore加密数据结束：1551959907337
+D: keystore加密数据耗时：2886
+D: keystore解密数据开始：1551959909648
+D: keystore解密数据结束：1551959919271
+D: keystore解密数据耗时：9623
+第五次安装
+D: keystore初始化开始：1551959943302
+D: keystore初始化结束：1551959943605
+D: keystore初始化耗时：303
+D: keystore加密数据开始：1551959948276
+D: keystore加密数据结束：1551959951145
+D: keystore加密数据耗时：2869
+D: keystore解密数据开始：1551959954222
+D: keystore解密数据结束：1551959963823
+D: keystore解密数据耗时：9601</code></pre></div>
+
+<h2 id="toc_5">oppo a57    Android6.0.1      23</h2>
+
+<div><pre><code class="language-none">第一次安装
+D: keystore初始化开始：1551960153513
+D: keystore初始化结束：1551960155462
+D: keystore初始化耗时：1949
+D: keystore加密数据开始：1551960158442
+D: keystore加密数据结束：1551960159843
+D: keystore加密数据耗时：1401
+D: keystore解密数据开始：1551960162642
+D: keystore解密数据结束：1551960169537
+D: keystore解密数据耗时：6895
+第二次安装
+D: keystore初始化开始：1551960261988
+D: keystore初始化结束：1551960262871
+D: keystore初始化耗时：883
+D: keystore加密数据开始：1551960267202
+D: keystore加密数据结束：1551960268786
+D: keystore加密数据耗时：1584
+D: keystore解密数据开始：1551960271937
+D: keystore解密数据结束：1551960278676
+D: keystore解密数据耗时：6739
+第三次安装
+D: keystore初始化开始：1551960325874
+D: keystore初始化结束：1551960327488
+D: keystore初始化耗时：1614
+D: keystore加密数据开始：1551960331309
+D: keystore加密数据结束：1551960332867
+D: keystore加密数据耗时：1558
+D: keystore解密数据开始：1551960335467
+D: keystore解密数据结束：1551960342347
+D: keystore解密数据耗时：6880
+第四次安装
+D: keystore初始化开始：1551960386486
+D: keystore初始化结束：1551960387876
+D: keystore初始化耗时：1390
+D: keystore加密数据开始：1551960397156
+D: keystore加密数据结束：1551960398720
+D: keystore加密数据耗时：1564
+D: keystore解密数据开始：1551960402809
+D: keystore解密数据结束：1551960409667
+D: keystore解密数据耗时：6858
+第五次安装
+D: keystore初始化开始：1551960453173
+D: keystore初始化结束：1551960456268
+D: keystore初始化耗时：3095
+D: keystore加密数据开始：1551960458490
+D: keystore加密数据结束：1551960459940
+D: keystore加密数据耗时：1450
+D: keystore解密数据开始：1551960462086
+D: keystore解密数据结束：1551960468898
+D: keystore解密数据耗时：6812</code></pre></div>
+
+
+
+
+</body>
+
+</html>
